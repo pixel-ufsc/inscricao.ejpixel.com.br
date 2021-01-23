@@ -1,0 +1,147 @@
+body {
+  position: relative;
+  background: #000000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  background-image: url("./assets/bg.svg");
+  background-repeat: no-repeat no-repeat;
+  background-size: auto;
+  background-position: center center;
+
+  font-size: 16px;
+}
+
+body main {
+  height: 100%;
+  margin: 0px auto;
+  max-width: 532px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header */
+body main header h1 {
+  display: none;
+}
+
+body main header {
+  display: flex;
+  justify-content: center;
+}
+
+/* Content */
+body main div#content {
+  height: calc(100% - 63px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+body main div#content > h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+body main div#content ol {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body main div#content ol li {
+  display: flex;
+  flex-direction: row;
+}
+
+body main div#content ol li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+body main div#content ol li div.list-counter {
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 100%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+body main div#content ol li div.list-content p {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+body main div#content ol li div.list-content p a {
+  color: #82327e;
+  text-decoration: none;
+}
+
+body main div#content a.button {
+  margin-top: auto;
+  background: #ffffff;
+  border-radius: 100px;
+  height: 60px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #82327e;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 16px;
+  padding-left: 24px;
+}
+
+body main div#content a.button span:nth-child(1) {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+body main div#content a.button span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+
+  body main {
+    padding: 80px 20px;
+  }
+
+  body main div#content ol {
+    margin-top: auto;
+    padding-bottom: 80px;
+  }
+
+  body main div#content ol li div.list-counter {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 630px) {
+  body {
+    font-size: 18px;
+  }
+}
